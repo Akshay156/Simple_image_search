@@ -81,9 +81,7 @@ json """
 
 4. Problem 1 <a name="problem-1-execution"></a>
 
-    ![Problem 1](images/problem_1.png?raw=true "Title")
-
-Problem 1 Execution
+    ![solving problem 1](images/problem_1.png?raw=true "Title")
 
 After preprocessing, the system executes Problem 1, which involves searching for all products in shelf images and drawing bounding boxes around the detected products. This process utilizes object detection, feature extraction, and Faiss index management.
 Problem Statement
@@ -104,7 +102,7 @@ The program iterates over each product image, converting it into embeddings. The
 .
 5. Problem 2 Execution <a name="problem-2-execution"></a>
 
-    ![Problem 2](images/problem_2.png?raw=true "Title")
+    ![solving problem 2](images/problem_2.png?raw=true "Title")
 
 Problem 2 is similar to Problem 1 but involves taking shelf images as input and finding all occurrences of products present in a given set of 100 products. Not all visible products in a shelf may be part of the given set of 100 products, and the system focuses only on these specified products.
 Problem Statement
