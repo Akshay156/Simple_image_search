@@ -20,33 +20,6 @@ This repository contains the Retail Indexer System, a solution designed to strea
 ### Configuration
 Before running the system, ensure the `config.json` file is properly configured. Adjust parameters such as similarity threshold, model paths, and database credentials as needed.
 
-Sample `config.json`:
-{
-    "similarity_threshold": 0.1,
-    "database": {
-        "dbname": "your_database_name",
-        "user": "your_postgres_username",
-        "password": "your_postgres_password"
-    },
-    "yolov8": {
-        "model_path": "models/best.pt",
-        "conf_thres": 0.45,
-        "iou_thres": 0.5
-    },
-    "shelf_processor": {
-        "conf_thres": 0.7,
-        "iou_thres": 0.5,
-        "min_bbox_width": 50,
-        "min_bbox_height": 50
-    },
-    "faiss_manager": {
-        "shelf_index_file": "index_files/shelf_images_index.idx",
-        "product_index_file": "index_files/product_images_index.idx"
-    },
-    "shelf_image_folder": "directory_of_folder_with_shelf_images",
-    "product_image_folder": "directory_of_folder_with_product_images"
-}
-
 Preprocessing
 
 Download the models from the link.
@@ -123,3 +96,34 @@ The program iterates over each shelf image, detecting and extracting the product
 Additional Information
 
 For additional information and details on running the system, refer to the respective Python scripts where certain steps are commented. Also, for certain classes, there is in-depth description.
+
+
+
+Sample `config.json`:
+```json
+{
+    "similarity_threshold": 0.1,
+    "database": {
+        "dbname": "your_database_name",
+        "user": "your_postgres_username",
+        "password": "your_postgres_password"
+    },
+    "yolov8": {
+        "model_path": "models/best.pt",
+        "conf_thres": 0.45,
+        "iou_thres": 0.5
+    },
+    "shelf_processor": {
+        "conf_thres": 0.7,
+        "iou_thres": 0.5,
+        "min_bbox_width": 50,
+        "min_bbox_height": 50
+    },
+    "faiss_manager": {
+        "shelf_index_file": "index_files/shelf_images_index.idx",
+        "product_index_file": "index_files/product_images_index.idx"
+    },
+    "shelf_image_folder": "directory_of_folder_with_shelf_images",
+    "product_image_folder": "directory_of_folder_with_product_images"
+}
+
