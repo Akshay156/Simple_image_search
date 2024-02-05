@@ -47,7 +47,7 @@ Sample `config.json`:
     },
     "shelf_image_folder": "directory_of_folder_with_shelf_images",
     "product_image_folder": "directory_of_folder_with_product_images"
-}
+}"""
 
 Preprocessing
 
@@ -57,21 +57,21 @@ Create the database and some folders:
 
 bash
 
-mkdir models index_files text pickle
-DB_NAME=$(jq -r '.database.dbname' config.json)
-psql -U <username> -h <hostname> -c "CREATE DATABASE $DB_NAME"
+$ mkdir models index_files text pickle
+$ DB_NAME=$(jq -r '.database.dbname' config.json)
+$ psql -U <username> -h <hostname> -c "CREATE DATABASE $DB_NAME"
 
 Install requirements:
 
 bash
 
-pip3 install -r requirements.txt
+$ pip3 install -r requirements.txt
 
 Run the program:
 
 bash
 
-python3 preprocess_data.py
+$ python3 preprocess_data.py
 
 Basic Functionality:
 
@@ -97,7 +97,7 @@ To execute Problem 1, run the following command:
 
 bash
 
-python3 problem_1.py
+$ python3 problem_1.py
 
 The program iterates over each product image, converting it into embeddings. These embeddings are then used to retrieve the nearest neighbors from the Faiss index. Cosine similarity is applied to filter out unwanted elements further. The results are saved in the solution_1.txt file inside the text folder.
 Problem 2 Execution
@@ -113,11 +113,13 @@ Problem 2 requires identifying occurrences of products within shelf images based
 
 Execution
 
+First set the path of image inside the problem_2.py file
+
 To execute Problem 2, run the following command:
 
 bash
 
-python3 problem_2.py
+$ python3 problem_2.py
 
 The program iterates over each shelf image, detecting and extracting the products present. It then matches these products with the specified set of 100 products and saves the results in the solution_2.txt file inside the text folder.
 Additional Information
