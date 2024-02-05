@@ -1,0 +1,26 @@
+{
+    "similarity_threshold": "Threshold value for similarity score between embeddings.",
+    "last_file_processed": "filename of last last file got processed ex: db89.jpg",
+    "database": {
+        "dbname": "Name of the database.",
+        "user": "Username for accessing the database.",
+        "password": "Password for accessing the database."
+    },
+    "yolov8": {
+        "model_path": "Path to the model file.",
+        "conf_thres": "Confidence threshold for detections.",
+        "iou_thres": "IoU threshold for detections."
+    },
+    "shelf_processor": {
+        "conf_thres": "Confidence threshold for shelf processor.",
+        "iou_thres": "IoU threshold for shelf processor.",
+        "min_bbox_width": "Minimum width for bounding boxes in shelf processor.",
+        "min_bbox_height": "Minimum height for bounding boxes in shelf processor."
+    },
+    "faiss_manager": {
+        "shelf_index_file": "Path to the shelf index file for Faiss.",
+        "product_index_file": "Path to the product index file for Faiss."
+    },
+    "shelf_image_folder": "Path to the folder containing shelf images.",
+    "product_image_folder": "Path to the folder containing product images."
+}
