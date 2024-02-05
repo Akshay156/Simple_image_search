@@ -127,3 +127,10 @@ Sample `config.json`:
     "product_image_folder": "directory_of_folder_with_product_images"
 }
 
+
+    #TODO
+Various image manipulation preprocessing options.
+Use Milvus for index operation.
+Docker container setup to test seamlessly.
+
+
