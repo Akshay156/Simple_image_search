@@ -1,5 +1,9 @@
 ![Preprocessing of dataset](images/pre_process.png?raw=true "Title")
+
+
 ![Solving Problem 1](images/problem_1.png?raw=true "Title")
+
+
 ![Solving Problem 2](images/problem_2.png?raw=true "Title")
 
 Retail Indexer System
