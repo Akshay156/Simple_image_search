@@ -47,7 +47,7 @@ Sample `config.json`:
     },
     "shelf_image_folder": "directory_of_folder_with_shelf_images",
     "product_image_folder": "directory_of_folder_with_product_images"
-}"""
+}```
 
 Preprocessing
 
