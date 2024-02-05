@@ -21,8 +21,6 @@ This repository contains the Retail Indexer System, a solution designed to strea
 Before running the system, ensure the `config.json` file is properly configured. Adjust parameters such as similarity threshold, model paths, and database credentials as needed.
 
 Sample `config.json`:
-
-```json
 {
     "similarity_threshold": 0.1,
     "database": {
@@ -47,7 +45,7 @@ Sample `config.json`:
     },
     "shelf_image_folder": "directory_of_folder_with_shelf_images",
     "product_image_folder": "directory_of_folder_with_product_images"
-}```
+}
 
 Preprocessing
 
