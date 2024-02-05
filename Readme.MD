@@ -6,7 +6,7 @@
 
 ![Solving Problem 2](images/problem_2.png?raw=true "Title")
 
-Retail Indexer System
+Simple image based search
 
 This repository contains the Retail Indexer System, a solution designed to streamline product search and detection processes within retail environments.
 
